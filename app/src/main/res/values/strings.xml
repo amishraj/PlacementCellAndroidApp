@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Training and Placement Cell</string>
+    <string name="title_activity_feed">News Feed</string>
+    <string name="title_activity_studentlogin">Student Login</string>
+    <string name="title_activity_admin_login">Admin Login</string>
+    <string name="adlogin">Administrator Login</string>
+    <string name="adminwelcome">Welcome to the Administrator Portal. Login to continue or click below to learn more </string>
+    <string name="title_activity_home_splash">HomeSplash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="learn_more">Learn More</string>
+    <string name="welcome">Welcome to Students Portal of PTP! Please Login to continue or click below to learn more</string>
+    <string name="slogin">Student Login</string>
+    <string name="username">Username</string>
+    <string name="pass">Password</string>
+    <string name="sforgot">Forgot Password</string>
+    <string name="welcomeforgot">Welcome to Forgot Password Portal! Please enter your email address below.</string>
+    <string-array name="gender">
+        <item>MALE</item>
+        <item>FEMALE</item>
+        <item>OTHERS</item>
+    </string-array>
+    <string-array name="yesorno">
+        <item>NO</item>
+        <item>YES</item>
+
+    </string-array>
+    <string-array name="category">
+        <item>GENERAL</item>
+        <item>SC</item>
+        <item>ST</item>
+        <item>OBC</item>
+    </string-array>
+    <string-array name="branches">
+        <item>Computer Science and Engineering</item>
+        <item>Electronics and Communication Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Chemical Engineering</item>
+        <item>Metallurgical and Material Engineering</item>
+        <item>Architecture and Planning</item>
+    </string-array>
+
+    <string-array name="company_list_branches">
+        <item>All Branches</item>
+        <item>Computer Science and Engineering</item>
+        <item>Electronics and Communication Engineering</item>
+        <item>Mechanical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Chemical Engineering</item>
+        <item>Metallurgical and Material Engineering</item>
+        <item>Architecture and Planning</item>
+    </string-array>
+</resources>

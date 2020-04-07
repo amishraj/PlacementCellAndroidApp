@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentRegister1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradientbackground"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Registration"
+            android:textColor="#fff"
+            android:textSize="31sp" />
+
+        <TextView
+            android:layout_margin="15dp"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:text="Please register below"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/register_collegeid1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_card_travel_black_24dp"
+                    android:hint="Enter College ID"
+                    android:inputType="text"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/register_name1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_person_pin_black_24dp"
+                    android:hint="Enter Name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+                <Button
+                    android:id="@+id/register_age1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_child_care_black_24dp"
+                    android:hint="Click to Enter Date of Birth"
+                    android:inputType="number"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/text_gender1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+
+                    android:drawableLeft="@drawable/ic_gender"
+                    android:hint="Choose Gender"
+                    android:padding="10dp" />
+
+                <Spinner
+                    android:id="@+id/register_gender1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="39dp"
+                    android:background="@drawable/edit_text_style"
+                    android:entries="@array/gender">
+
+                </Spinner>
+
+                <EditText
+                    android:id="@+id/register_cgpa1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_gesture_black_24dp"
+                    android:hint="Enter CGPA"
+                    android:inputType="textPersonName|numberDecimal"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/register_branch1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_medal"
+                    android:hint="Choose Branch"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+                <Spinner
+                    android:id="@+id/register_spinbranch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_text_style"
+                    android:entries="@array/branches">
+
+                </Spinner>
+
+                <EditText
+                    android:id="@+id/register_phone1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/login_mail1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_person_outline_blak_24dp"
+                    android:hint="Enter Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/login_password1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                    android:hint="Enter Pasword"
+                    android:inputType="textPassword"
+                    android:padding="10dp" />
+                <EditText
+                    android:id="@+id/confirm_password1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+                    android:hint="Confirm Pasword"
+                    android:inputType="textPassword"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/register_10thscore1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_arrow_graph_up_right"
+                    android:hint="Enter 10th Std. Score"
+                    android:inputType="textPersonName|numberDecimal"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/register_12thscore1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_arrow_graph_up_right"
+                    android:hint="Enter 12th Std. Score"
+                    android:inputType="textPersonName|numberDecimal"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/text_pewd1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:text="Do you have any Disabilities?"
+                    android:textAlignment="center" />
+
+                <Spinner
+                    android:id="@+id/register_pwd1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_text_style"
+                    android:entries="@array/yesorno">
+
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/text_gapyear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:text="Do you have any Gap Year?"
+                    android:textAlignment="center" />
+
+                <Spinner
+                    android:id="@+id/register_gapyear1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_text_style"
+                    android:entries="@array/yesorno">
+
+                </Spinner>
+
+                <TextView
+                    android:id="@+id/text_category1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:text="Please choose your category"
+                    android:textAlignment="center" />
+
+                <Spinner
+                    android:id="@+id/register_category1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_text_style"
+                    android:entries="@array/category">
+
+                </Spinner>
+
+                <Button
+                    android:id="@+id/login_button1"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/buttonstylenewpink"
+                    android:drawableRight="@drawable/ic_send_black_24dp"
+                    android:text="Register"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/content_studentlogin"
+        android:layout_width="match_parent"
+        android:layout_height="323dp" />
+
+
+</LinearLayout>

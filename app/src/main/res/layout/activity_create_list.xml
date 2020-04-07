@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graylight"
+    tools:context=".CreateList">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradientbackground"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="Add a New Company"
+                android:textColor="#fff"
+                android:textSize="30sp" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="*Enter Company Title Carefully, cannot be updated later"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/inputListTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_person_outline_blak_24dp"
+                    android:hint="Enter Company Title"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/inputListDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_card_travel_black_24dp"
+                    android:hint="Enter Company Description"
+                    android:inputType="textMultiLine" />
+
+                <EditText
+                    android:id="@+id/list_cgmin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_gesture_black_24dp"
+                    android:gravity="center"
+                    android:hint="Enter Minimum CGPA Criteria"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/list_cgmax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_gesture_black_24dp"
+                    android:gravity="center"
+                    android:hint="Enter Maximum CGPA Criteria"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edit_text_style"
+                    android:text="Select the Branches applicable for Company" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text_style"
+                    android:text="Computer Science and Enginering" />
+
+                <RadioGroup
+                    android:id="@+id/cseradio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/cse_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:gravity="center"
+                        android:onClick="checkButton"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/cse_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:onClick="checkButton"
+                        android:text="No" />
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text_style"
+                    android:text="Electronics and Communication Engineering" />
+
+                <RadioGroup
+                    android:id="@+id/eceradio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/ece_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:gravity="center"
+                        android:onClick="checkButton"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/ece_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:onClick="checkButton"
+                        android:text="No" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text_style"
+                    android:text="Mechanical Engineering" />
+
+                <RadioGroup
+                    android:id="@+id/mechradio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/mech_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:gravity="center"
+                        android:onClick="checkButton"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/mech_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:onClick="checkButton"
+                        android:text="No" />
+
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text_style"
+                    android:text="Civil Engineering" />
+
+                <RadioGroup
+                    android:id="@+id/civilradio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/civil_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:gravity="center"
+                        android:onClick="checkButton"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/civil_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:onClick="checkButton"
+                        android:text="No" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text_style"
+                    android:text="Electrical Engineering" />
+
+                <RadioGroup
+                    android:id="@+id/electricalradio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/electrical_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:gravity="center"
+                        android:onClick="checkButton"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/electrical_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:onClick="checkButton"
+                        android:text="No" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text_style"
+                    android:text="Chemical Engineering" />
+
+                <RadioGroup
+                    android:id="@+id/chemradio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/chem_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:gravity="center"
+                        android:onClick="checkButton"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/chem_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:onClick="checkButton"
+                        android:text="No" />
+
+
+                </RadioGroup>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text_style"
+                    android:text="Architecture and Planning" />
+
+                <RadioGroup
+                    android:id="@+id/archiradio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/archi_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:gravity="center"
+                        android:onClick="checkButton"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/archi_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:onClick="checkButton"
+                        android:text="No" />
+
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edit_text_style"
+                    android:text="Metallurgical and Material Engineering" />
+
+                <RadioGroup
+                    android:id="@+id/metaradio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/meta_yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:gravity="center"
+                        android:onClick="checkButton"
+                        android:text="Yes" />
+
+                    <RadioButton
+                        android:id="@+id/meta_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/edit_text_style"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:onClick="checkButton"
+                        android:text="No" />
+
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/listCreate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/buttonstylenewpink"
+                    android:text="Enter"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

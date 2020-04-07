@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditUserProfile"
+    android:background="@color/graylight"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Student Profile"
+            android:textColor="#fff"
+            android:textSize="31sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please make sure the correct values for Disability, Category, Gender, and Gap Year are Selected"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/Edit_collegeid"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_card_travel_black_24dp"
+                    android:hint="Enter Updated College ID"
+                    android:inputType="text"
+                    android:padding="10dp" />
+                <TextView
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_medal"
+                    android:hint="Choose Branch"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+
+                <Spinner
+                    android:id="@+id/edit_branch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:background="@drawable/edit_text_style"
+                    android:entries="@array/branches">
+
+                </Spinner>
+
+                <EditText
+                    android:id="@+id/Edit_name"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_person_pin_black_24dp"
+                    android:hint="Enter Updated Name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp" />
+                <EditText
+                    android:id="@+id/edit_mail1"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_person_outline_blak_24dp"
+                    android:hint="Enter Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp" />
+
+                <Button
+                    android:id="@+id/Edit_age"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_child_care_black_24dp"
+                    android:hint="Click to Enter Date of Birth"
+                    android:inputType="number"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Choose Gender"
+                    android:textAlignment="center"
+                    android:layout_marginTop="30sp"/>
+
+                <Spinner
+                    android:id="@+id/edit_gender1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:entries="@array/gender"
+                    android:layout_marginTop="15sp">
+
+                </Spinner>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Do you have any Disabilities?"
+                    android:textAlignment="center"
+                    android:layout_marginTop="15dp"/>
+                <Spinner
+                    android:id="@+id/edit_pwd1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:entries="@array/yesorno">
+
+                </Spinner>
+
+                <EditText
+                    android:id="@+id/edit_cgpa"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_gesture_black_24dp"
+                    android:hint="Enter Updated CGPA"
+                    android:inputType="textPersonName|numberDecimal"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/Edit_phone"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_phone_black_24dp"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:padding="10dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Do you have any Gap Year?"
+                    android:textAlignment="center"
+                    android:layout_marginTop="15dp"/>
+
+                <Spinner
+                    android:id="@+id/edit_gapyear1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:entries="@array/yesorno"/>
+
+                <EditText
+                    android:id="@+id/Edit_10thscore"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_arrow_graph_up_right"
+                    android:hint="Enter 10th Std. Score"
+                    android:inputType="textPersonName|numberDecimal"
+                    android:padding="10dp" />
+                <EditText
+                    android:id="@+id/Edit_12thscore"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edit_text_style"
+                    android:drawableLeft="@drawable/ic_arrow_graph_up_right"
+                    android:hint="Enter 12th Std. Score"
+                    android:inputType="textPersonName|numberDecimal"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Please choose your category"
+                    android:textAlignment="center"
+                    android:layout_marginTop="15dp"/>
+                <Spinner
+                    android:id="@+id/edit_category1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15sp"
+                    android:entries="@array/category"/>
+
+                <Button
+                android:id="@+id/Edit_button"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonstylenewpink"
+                android:drawableRight="@drawable/ic_send_black_24dp"
+                android:text="Update"
+                android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/button_pass"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20sp"
+                    android:background="@drawable/buttonstylenewpink"
+                    android:drawableRight="@drawable/ic_send_black_24dp"
+                    android:text="Edit Password"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
