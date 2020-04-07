@@ -6,7 +6,7 @@
     density="420dpi"
     format="10"
     plugin-version="3.2.1"
-    timestamp="1574682384168"
+    timestamp="1586240935516"
     token="7005361747598479099"
     verifier="FULL_BUILD_REQUESTED" >
 
@@ -65,7 +65,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1574682384168"
+        timestamp="1586240935516"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\Amish Raj\AndroidStudioProjects\HomePage31\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
